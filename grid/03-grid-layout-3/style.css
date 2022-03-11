@@ -20,18 +20,23 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
   grid-column: 1 / 3;
   background-color: #393f4d;
 }
 
 .logo {
+  display: grid;
+  justify-content: start;
 }
 
 .menu {
 }
 
 .menu ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
 }
 
 .menu ul,
@@ -40,8 +45,10 @@
 }
 
 .sidebar {
+  display: grid;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
+  gap: 50px;
   background-color: #ff7755;
 }
 
@@ -54,9 +61,15 @@
 }
 
 .photo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar .side-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   color: black;
   font-size: 16px;
@@ -68,6 +81,9 @@
 }
 
 .nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
 }
 
 .nav ul li {
@@ -104,6 +120,7 @@
 }
 
 .footer {
+  grid-column: 1 / 3;
   background-color: #393f4d;
 }
 
